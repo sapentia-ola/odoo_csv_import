@@ -161,7 +161,14 @@ class Processor(object):
             line = [s.strip() if s and s.strip() not in null_values else '' for s in line]
             line_dict = dict(zip(self.header, line))
             try:
-                line_out = [mapping[k](line_dict) for k in mapping.keys()]
+                # line_out = [mapping[k](line_dict) for k in mapping.keys()]
+                line_out = []
+                for k in mapping.keys():
+                    if isinstance(mapping[k], bool):
+                        # Handle unexpected boolean value (e.g., log an error, skip processing, etc.)
+                        print(f"Warning: Unexpected boolean value for key '{k}'")
+                        continue
+                    line_out.append(mapping[k](line_dict))
             except SkippingException as e:
                 if verbose:
                     print("Skipping", i)

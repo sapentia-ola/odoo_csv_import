@@ -1,0 +1,5 @@
+"id";"state";"country";"create_uid";"write_uid";"name";"street";"street2";"zip";"city";"email";"phone";"bic";"active"
+"1";"NULL";"NULL";"1";"1";"Reserve";"NULL";"NULL";"NULL";"NULL";"NULL";"NULL";"NULL";"False"
+"2";"NULL";"NULL";"1";"1";"ING";"NULL";"NULL";"NULL";"NULL";"NULL";"NULL";"BBRUBEBB";"True"
+"3";"NULL";"NULL";"1";"1";"BNP Paribas";"NULL";"NULL";"NULL";"NULL";"NULL";"NULL";"GEBABEBB";"True"
+"4";"NULL";"NULL";"2";"2";"HSBC";"NULL";"NULL";"NULL";"NULL";"NULL";"NULL";"NULL";"True"
